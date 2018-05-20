@@ -1,0 +1,102 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Tilesets/Castle/CastleTileset.tres" type="TileSet" id=1]
+[ext_resource path="res://Gameplay/Obstacles/Static/Bouncers/Bouncer.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Gameplay/Obstacles/Static/Bouncers/Ruins.png" type="Texture" id=3]
+[ext_resource path="res://Gameplay/Obstacles/Collectable/Coin/Coin.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Gameplay/Player/Player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://GUI/Bars/CoinsBar.tscn" type="PackedScene" id=6]
+
+
+
+[node name="TestLevel" type="Node2D" index="0"]
+
+[node name="Floor" type="TileMap" parent="." index="0"]
+
+mode = 0
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 128, 128 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 131074, 5, 0, 131075, 1, 0, 131076, 5, 0, 131077, 5, 0, 131078, 5, 0, 131079, -1610612730, 0, 131080, 4, 0, 131081, 5, 0, 131082, 5, 0, 131083, 5, 0, 196610, 0, 0, 196611, 5, 0, 196612, 1, 0, 196613, -1073741822, 0, 196614, 6, 0, 196615, 7, 0, 196616, 1610612742, 0, 196617, -1073741821, 0, 196618, 5, 0, 196619, 5, 0, 262146, 5, 0, 262147, 1, 0, 262148, 5, 0, 262149, 5, 0, 262150, 5, 0, 262151, -1073741818, 0, 262152, 5, 0, 262153, 5, 0, 262154, -1073741821, 0, 262155, 5, 0, 327682, 5, 0, 327683, 5, 0, 327684, 8, 0, 327685, 5, 0, 327686, 5, 0, 327687, 5, 0, 327688, 5, 0, 327689, 5, 0, 327690, 5, 0, 327691, -1073741821, 0, 393218, 1, 0, 393219, 0, 0, 393220, 9, 0, 393221, 10, 0, 393222, 1, 0, 393223, 2, 0, 393224, 3, 0, 393225, 4, 0, 393226, 5, 0, 393227, 6, 0 )
+_sections_unfolded = [ "Cell", "Transform" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Obstacles" type="Node2D" parent="." index="1"]
+
+[node name="Wall" parent="Obstacles" index="0" instance=ExtResource( 2 )]
+
+position = Vector2( 448, 448 )
+TEXTURE = ExtResource( 3 )
+BOUNCE_DIRECTION = 4
+
+[node name="Wall2" parent="Obstacles" index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 1472, 448 )
+TEXTURE = ExtResource( 3 )
+ADDED_POWER = -1
+BOUNCE_DIRECTION = 4
+
+[node name="Coins" type="Node2D" parent="." index="2"]
+
+editor/display_folded = true
+
+[node name="Coin" parent="Coins" index="0" instance=ExtResource( 4 )]
+
+position = Vector2( 576, 320 )
+
+[node name="Coin2" parent="Coins" index="1" instance=ExtResource( 4 )]
+
+position = Vector2( 704, 576 )
+
+[node name="Coin3" parent="Coins" index="2" instance=ExtResource( 4 )]
+
+position = Vector2( 832, 704 )
+
+[node name="Coin4" parent="Coins" index="3" instance=ExtResource( 4 )]
+
+position = Vector2( 960, 704 )
+
+[node name="Coin5" parent="Coins" index="4" instance=ExtResource( 4 )]
+
+position = Vector2( 1088, 704 )
+
+[node name="Player" parent="." index="3" instance=ExtResource( 5 )]
+
+position = Vector2( 320, 320 )
+_sections_unfolded = [ "Collision", "Pause", "Transform" ]
+
+[node name="Control" type="Control" parent="." index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 16.0
+margin_top = 16.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Anchor", "Margin" ]
+
+[node name="CoinsBar" parent="Control" index="0" instance=ExtResource( 6 )]
+
+

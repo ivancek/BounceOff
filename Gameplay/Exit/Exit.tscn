@@ -1,0 +1,64 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Gameplay/Exit/Exit.gd" type="Script" id=1]
+[ext_resource path="res://Gameplay/Exit/AnimSprites/Door1.png" type="Texture" id=2]
+[ext_resource path="res://Gameplay/Exit/AnimSprites/Door2.png" type="Texture" id=3]
+[ext_resource path="res://Gameplay/Exit/AnimSprites/Door3.png" type="Texture" id=4]
+[ext_resource path="res://Gameplay/Exit/AnimSprites/Door4.png" type="Texture" id=5]
+[ext_resource path="res://Gameplay/Exit/DoorOpen.wav" type="AudioStream" id=6]
+
+[sub_resource type="SpriteFrames" id=1]
+
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": false,
+"name": "OpenDoor",
+"speed": 4.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 40.4319, 49.7085 )
+
+[node name="Exit" type="Area2D"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+COINS_NEEDED = 0
+LEVEL_TO_LOAD = null
+
+[node name="DoorAnim" type="AnimatedSprite" parent="." index="0"]
+
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "OpenDoor"
+_sections_unfolded = [ "Animation", "Offset", "Region", "Transform" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( 0, 14 )
+shape = SubResource( 2 )
+_sections_unfolded = [ "Z Index" ]
+
+[node name="DoorSound" type="AudioStreamPlayer2D" parent="." index="2"]
+
+stream = ExtResource( 6 )
+volume_db = 0.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+__meta__ = {
+"_edit_lock_": true
+}
+
+

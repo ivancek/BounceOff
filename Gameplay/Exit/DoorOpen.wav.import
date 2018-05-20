@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/DoorOpen.wav-487a29fc777eadcec7ec62ff37b19f0f.sample"
+
+[deps]
+
+source_file="res://Gameplay/Exit/DoorOpen.wav"
+source_md5="a986bbafa646e4728b8e7082ebe066b0"
+
+dest_files=[ "res://.import/DoorOpen.wav-487a29fc777eadcec7ec62ff37b19f0f.sample" ]
+dest_md5="f3ea87dcdd1647bd003aaf5cbce26b26"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
