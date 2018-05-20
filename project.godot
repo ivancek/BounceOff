@@ -10,7 +10,7 @@ config_version=3
 
 [application]
 
-config/name="Prince"
+config/name="Bounce Off"
 run/main_scene="res://Core/MainMenu.tscn"
 config/icon="res://icon.png"
 
