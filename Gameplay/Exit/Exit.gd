@@ -8,14 +8,20 @@ var is_open = false
 
 func _ready():
 	player = get_tree().get_current_scene().get_node("Player")
-	player.connect("coin_collected", self, "_on_Player_coin_collected")
+	player.connect("coin_amount_changed", self, "_on_Player_coin_amount_changed")
 	connect("area_entered", self, "on_area_entered")
 
-func _on_Player_coin_collected(newAmount):
-	if newAmount >= COINS_NEEDED:
+
+func _on_Player_coin_amount_changed(new_amount):
+	if new_amount < COINS_NEEDED && is_open:
+		is_open = false
+		$DoorAnim.play("CloseDoor")
+		$DoorSound.play(0.5)
+	elif new_amount == COINS_NEEDED && !is_open:
 		is_open = true
 		$DoorAnim.play("OpenDoor")
 		$DoorSound.play(0.5)
+	
 # ------------------------------------
 
 func on_area_entered(otherArea):

@@ -6,7 +6,7 @@ var player
 
 func _ready():
 	player = get_tree().get_current_scene().get_node("Player")
-	player.connect("coin_collected", self, "_on_Player_coin_collected")
+	player.connect("coin_amount_changed", self, "_on_Player_coin_amount_changed")
 	label.text = str(0)
 
 #func _process(delta):
@@ -14,6 +14,6 @@ func _ready():
 #	# Update game logic here.
 #	pass
 
-func _on_Player_coin_collected(newAmount):
-	label.text = str(newAmount)
+func _on_Player_coin_amount_changed(new_amount):
+	label.text = str(new_amount)
 # ------------------------------------

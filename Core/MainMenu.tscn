@@ -3,7 +3,7 @@
 [ext_resource path="res://Core/MainMenuBackground.jpg" type="Texture" id=1]
 [ext_resource path="res://Core/MainMenu.gd" type="Script" id=2]
 
-[node name="TextureRect" type="TextureRect" index="0"]
+[node name="TextureRect" type="TextureRect"]
 
 anchor_left = 0.0
 anchor_top = 0.0

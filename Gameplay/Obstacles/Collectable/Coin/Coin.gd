@@ -1,7 +1,5 @@
 extends Area2D
 
-
-
 func _ready():
 	# Called every time the node is added to the scene.
 	# Initialization here
@@ -15,5 +13,11 @@ func on_area_entered(otherArea):
 	
 	if otherArea.has_method("collect_coin"):
 		otherArea.collect_coin()
-		visible = false;
-	
+		visible = false
+
+
+func get_state():
+	return visible
+
+func set_state(is_visible):
+	visible = is_visible

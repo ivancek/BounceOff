@@ -1,16 +1,21 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Gameplay/Exit/Exit.gd" type="Script" id=1]
-[ext_resource path="res://Gameplay/Exit/AnimSprites/Door1.png" type="Texture" id=2]
-[ext_resource path="res://Gameplay/Exit/AnimSprites/Door2.png" type="Texture" id=3]
-[ext_resource path="res://Gameplay/Exit/AnimSprites/Door3.png" type="Texture" id=4]
-[ext_resource path="res://Gameplay/Exit/AnimSprites/Door4.png" type="Texture" id=5]
+[ext_resource path="res://Gameplay/Exit/AnimSprites/Door4.png" type="Texture" id=2]
+[ext_resource path="res://Gameplay/Exit/AnimSprites/Door3.png" type="Texture" id=3]
+[ext_resource path="res://Gameplay/Exit/AnimSprites/Door2.png" type="Texture" id=4]
+[ext_resource path="res://Gameplay/Exit/AnimSprites/Door1.png" type="Texture" id=5]
 [ext_resource path="res://Gameplay/Exit/DoorOpen.wav" type="AudioStream" id=6]
 
 [sub_resource type="SpriteFrames" id=1]
 
 animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": false,
+"name": "CloseDoor",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 2 ) ],
 "loop": false,
 "name": "OpenDoor",
 "speed": 4.0
