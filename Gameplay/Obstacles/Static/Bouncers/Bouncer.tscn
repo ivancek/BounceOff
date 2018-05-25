@@ -3,13 +3,12 @@
 [ext_resource path="res://Gameplay/Obstacles/Static/Bouncers/Bouncer.gd" type="Script" id=1]
 [ext_resource path="res://Gameplay/Obstacles/Static/Bouncers/Ruins.png" type="Texture" id=2]
 
-
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 64, 64 )
 
-[node name="Wall" type="Area2D"]
+[node name="Wall" type="Area2D" index="0"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )

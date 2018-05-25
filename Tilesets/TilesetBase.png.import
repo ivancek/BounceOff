@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Forest.png-129fe7b9cab388ebe5a13c102805988d.stex"
+path="res://.import/TilesetBase.png-225b1d791af53b08f930f1893d52d266.stex"
 
 [deps]
 
-source_file="res://Tilesets/Forest/Forest.png"
-source_md5="1100b1e0faf1a20fd068f0a44c120c5d"
+source_file="res://Tilesets/TilesetBase.png"
+source_md5="ff6f520c59695cdc596acb05b3420f86"
 
-dest_files=[ "res://.import/Forest.png-129fe7b9cab388ebe5a13c102805988d.stex" ]
-dest_md5="74d975226ade2d95415348c09e82aa67"
+dest_files=[ "res://.import/TilesetBase.png-225b1d791af53b08f930f1893d52d266.stex" ]
+dest_md5="a4c266e0e727d44ba55dee35d1c5fdd0"
 
 [params]
 

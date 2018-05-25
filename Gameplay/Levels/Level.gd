@@ -18,6 +18,8 @@ func _input(event):
 	
 	if event.is_action_pressed("undo"):
 		undo()
+	if event.is_action_pressed("ui_cancel"):
+		get_tree().quit()
 
 
 func undo():
@@ -30,9 +32,9 @@ func on_player_jump_started():
 	save_coins_state()
 	save_player_state()
 
+
 func on_player_jump_finished():
 	allow_undo = true
-
 
 
 func save_coins_state():
@@ -55,16 +57,10 @@ func undo_coins_state():
 		i += 1
 
 
-
-
 func save_player_state():
 	var player_state = {}
 	player_state = $Player.get_state().duplicate()
 	player_states.push_front(player_state)
-	
-	print(player_states)
-
-
 
 
 func undo_player_state():
@@ -73,4 +69,3 @@ func undo_player_state():
 	
 	var _p_state = player_states.pop_front()
 	$Player.set_state(_p_state)
-	print(player_states)
