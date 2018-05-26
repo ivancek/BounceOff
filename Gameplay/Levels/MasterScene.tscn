@@ -8,7 +8,7 @@
 [ext_resource path="res://Gameplay/Player/Player.tscn" type="PackedScene" id=6]
 [ext_resource path="res://GUI/Bars/CoinsBar.tscn" type="PackedScene" id=7]
 
-[node name="Root" type="Node2D"]
+[node name="Root" type="Node2D" index="0"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
