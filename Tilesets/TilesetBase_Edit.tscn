@@ -180,4 +180,12 @@ region_enabled = true
 region_rect = Rect2( 512, 128, 128, 128 )
 _sections_unfolded = [ "Offset", "Region" ]
 
+[node name="23" type="Sprite" parent="." index="22"]
+
+position = Vector2( 616, 616 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 512, 512, 128, 128 )
+_sections_unfolded = [ "Offset", "Region" ]
+
 

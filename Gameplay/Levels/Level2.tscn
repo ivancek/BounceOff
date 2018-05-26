@@ -6,29 +6,22 @@
 
 [node name="Root" instance=ExtResource( 1 )]
 
-[node name="World" parent="." index="2"]
-
-editor/display_folded = false
-
 [node name="Coin" parent="World/Coins" index="0" instance=ExtResource( 2 )]
 
-position = Vector2( 320, 704 )
+position = Vector2( 1216, 704 )
 
 [node name="Coin2" parent="World/Coins" index="1" instance=ExtResource( 2 )]
 
-position = Vector2( 704, 832 )
+position = Vector2( 1600, 704 )
 
 [node name="Coin3" parent="World/Coins" index="2" instance=ExtResource( 2 )]
 
-position = Vector2( 576, 704 )
-
-[node name="Coin4" parent="World/Coins" index="3" instance=ExtResource( 2 )]
-
-position = Vector2( 704, 704 )
+position = Vector2( 832, 704 )
 
 [node name="Exit" parent="World" index="2"]
 
-COINS_NEEDED = 4
+position = Vector2( 1600, 1088 )
+COINS_NEEDED = 3
 LEVEL_TO_LOAD = ExtResource( 3 )
 
 

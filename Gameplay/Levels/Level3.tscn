@@ -4,30 +4,27 @@
 [ext_resource path="res://Gameplay/Obstacles/Collectable/Coin/Coin.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Core/MainMenu.tscn" type="PackedScene" id=3]
 
-[node name="Root" instance=ExtResource( 1 )]
+[node name="Root" index="0" instance=ExtResource( 1 )]
 
-[node name="World" parent="." index="2"]
+[node name="Coin2" parent="World/Coins" index="0" instance=ExtResource( 2 )]
 
-editor/display_folded = false
+position = Vector2( 1600, 704 )
 
-[node name="Coin" parent="World/Coins" index="0" instance=ExtResource( 2 )]
+[node name="Coin5" parent="World/Coins" index="1" instance=ExtResource( 2 )]
 
-position = Vector2( 832, 320 )
-
-[node name="Coin2" parent="World/Coins" index="1" instance=ExtResource( 2 )]
-
-position = Vector2( 832, 704 )
+position = Vector2( 1600, 1088 )
 
 [node name="Coin3" parent="World/Coins" index="2" instance=ExtResource( 2 )]
 
-position = Vector2( 832, 448 )
+position = Vector2( 1216, 320 )
 
 [node name="Coin4" parent="World/Coins" index="3" instance=ExtResource( 2 )]
 
-position = Vector2( 832, 576 )
+position = Vector2( 1216, 704 )
 
 [node name="Exit" parent="World" index="2"]
 
+position = Vector2( 1728, 1088 )
 COINS_NEEDED = 4
 LEVEL_TO_LOAD = ExtResource( 3 )
 

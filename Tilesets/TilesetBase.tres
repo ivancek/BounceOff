@@ -202,4 +202,13 @@
 21/occluder_offset = Vector2( 64, 64 )
 21/navigation_offset = Vector2( 64, 64 )
 21/shapes = [  ]
+22/name = "23"
+22/texture = ExtResource( 1 )
+22/tex_offset = Vector2( 0, 0 )
+22/modulate = Color( 1, 1, 1, 1 )
+22/region = Rect2( 512, 512, 128, 128 )
+22/is_autotile = false
+22/occluder_offset = Vector2( 64, 64 )
+22/navigation_offset = Vector2( 64, 64 )
+22/shapes = [  ]
 
