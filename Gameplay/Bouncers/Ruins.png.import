@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Coin.png-85fb2e8c3551aae0d10af15e7650a97a.stex"
+path="res://.import/Ruins.png-5610ff2d7fdff461a6f1c442b4cdf53e.stex"
 
 [deps]
 
-source_file="res://Gameplay/Obstacles/Collectable/Coin/Coin.png"
-source_md5="a36318c147264ce42b636082fdf8195d"
+source_file="res://Gameplay/Bouncers/Ruins.png"
+source_md5="b176d924b670e0c53ba6fe1006983fa1"
 
-dest_files=[ "res://.import/Coin.png-85fb2e8c3551aae0d10af15e7650a97a.stex" ]
-dest_md5="e87b15e9bb334ed211b6803121b163ca"
+dest_files=[ "res://.import/Ruins.png-5610ff2d7fdff461a6f1c442b4cdf53e.stex" ]
+dest_md5="9a35f358b793dfea9f9b76eebd0986ec"
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PlayingBoard.png-06deb664f201cfc79cf4419881904349.stex"
+path="res://.import/Coin.png-76270a1064d42aa946ff00b65760cbf8.stex"
 
 [deps]
 
-source_file="res://Gameplay/Levels/PlayingBoard.png"
-source_md5="f9e20a4bf3ae81920361e9b8690ddb17"
+source_file="res://Gameplay/Coin/Coin.png"
+source_md5="a36318c147264ce42b636082fdf8195d"
 
-dest_files=[ "res://.import/PlayingBoard.png-06deb664f201cfc79cf4419881904349.stex" ]
-dest_md5="15ba9908d37adf92e04ee43387acba16"
+dest_files=[ "res://.import/Coin.png-76270a1064d42aa946ff00b65760cbf8.stex" ]
+dest_md5="e87b15e9bb334ed211b6803121b163ca"
 
 [params]
 

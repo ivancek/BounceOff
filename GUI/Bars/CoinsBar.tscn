@@ -2,8 +2,9 @@
 
 [ext_resource path="res://GUI/Bars/CoinsBar.gd" type="Script" id=1]
 [ext_resource path="res://GUI/label_HP_bg.png" type="Texture" id=2]
-[ext_resource path="res://Gameplay/Obstacles/Collectable/Coin/Coin.png" type="Texture" id=3]
+[ext_resource path="res://Gameplay/Coin/Coin.png" type="Texture" id=3]
 [ext_resource path="res://font/Comfortaa-Bold.ttf" type="DynamicFontData" id=4]
+
 
 [sub_resource type="DynamicFont" id=1]
 

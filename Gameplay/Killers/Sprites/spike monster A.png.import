@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PlayerBody.png-140d9e2a619b70af46f5bf210b6f5c6a.stex"
+path="res://.import/spike monster A.png-160c127c2164cc66ba4e15c7abfb2be7.stex"
 
 [deps]
 
-source_file="res://Gameplay/Player/PlayerBody.png"
-source_md5="832da5a2e21088e833a82ca18584a368"
+source_file="res://Gameplay/Killers/Sprites/spike monster A.png"
+source_md5="a499d8cdfcaf5e40b0a8b5ea14e6078d"
 
-dest_files=[ "res://.import/PlayerBody.png-140d9e2a619b70af46f5bf210b6f5c6a.stex" ]
-dest_md5="6bc661cf6ab865236fc19d4cfa530ae3"
+dest_files=[ "res://.import/spike monster A.png-160c127c2164cc66ba4e15c7abfb2be7.stex" ]
+dest_md5="0fe1cff3d922626e7f08091372b4d5c1"
 
 [params]
 

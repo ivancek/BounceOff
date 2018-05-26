@@ -7,7 +7,7 @@ func _ready():
 
 
 func _on_ButtonPlay_pressed():
-	get_node("/root/global").load_level("res://Gameplay/Levels/Level1.tscn")
+	get_node("/root/global").load_level("res://Levels/Level1.tscn")
 
 
 func _on_ButtonQuit_pressed():

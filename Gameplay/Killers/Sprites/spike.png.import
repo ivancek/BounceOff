@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PlayerBody.png-140d9e2a619b70af46f5bf210b6f5c6a.stex"
+path="res://.import/spike.png-e6027b971a7bd383de93ac0fec8411e9.stex"
 
 [deps]
 
-source_file="res://Gameplay/Player/PlayerBody.png"
-source_md5="832da5a2e21088e833a82ca18584a368"
+source_file="res://Gameplay/Killers/Sprites/spike.png"
+source_md5="52bd2f3d4553ae54b312201404f14a84"
 
-dest_files=[ "res://.import/PlayerBody.png-140d9e2a619b70af46f5bf210b6f5c6a.stex" ]
-dest_md5="6bc661cf6ab865236fc19d4cfa530ae3"
+dest_files=[ "res://.import/spike.png-e6027b971a7bd383de93ac0fec8411e9.stex" ]
+dest_md5="005fb5d3fa4540289dd404be8cd8bc7d"
 
 [params]
 

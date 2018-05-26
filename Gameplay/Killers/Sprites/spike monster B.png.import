@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Ruins.png-7cf2610534beaa747167ad4de30892fa.stex"
+path="res://.import/spike monster B.png-744bbff5151e87905a244a3855f111a0.stex"
 
 [deps]
 
-source_file="res://Gameplay/Obstacles/Static/Bouncers/Ruins.png"
-source_md5="b176d924b670e0c53ba6fe1006983fa1"
+source_file="res://Gameplay/Killers/Sprites/spike monster B.png"
+source_md5="466e10917078459312c925b84bd38aa0"
 
-dest_files=[ "res://.import/Ruins.png-7cf2610534beaa747167ad4de30892fa.stex" ]
-dest_md5="9a35f358b793dfea9f9b76eebd0986ec"
+dest_files=[ "res://.import/spike monster B.png-744bbff5151e87905a244a3855f111a0.stex" ]
+dest_md5="e48aa903e7fd0e8ff0a173f21064ae40"
 
 [params]
 

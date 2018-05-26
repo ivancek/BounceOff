@@ -1,12 +1,14 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Gameplay/Levels/Level.gd" type="Script" id=1]
-[ext_resource path="res://Gameplay/Levels/PlayingBoard.png" type="Texture" id=2]
+[ext_resource path="res://Levels/Level.gd" type="Script" id=1]
+[ext_resource path="res://Levels/PlayingBoard.png" type="Texture" id=2]
 [ext_resource path="res://Tilesets/TilesetBase.tres" type="TileSet" id=3]
-[ext_resource path="res://Gameplay/Obstacles/Static/Bouncers/Bouncer.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Gameplay/Bouncers/Bouncer.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Gameplay/Exit/Exit.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Gameplay/Player/Player.tscn" type="PackedScene" id=6]
 [ext_resource path="res://GUI/Bars/CoinsBar.tscn" type="PackedScene" id=7]
+
+
 
 [node name="Root" type="Node2D" index="0"]
 

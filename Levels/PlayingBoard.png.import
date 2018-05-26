@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PlayerBody.png-140d9e2a619b70af46f5bf210b6f5c6a.stex"
+path="res://.import/PlayingBoard.png-1525124a4646485e79b4b9d9bc3eff80.stex"
 
 [deps]
 
-source_file="res://Gameplay/Player/PlayerBody.png"
-source_md5="832da5a2e21088e833a82ca18584a368"
+source_file="res://Levels/PlayingBoard.png"
+source_md5="f9e20a4bf3ae81920361e9b8690ddb17"
 
-dest_files=[ "res://.import/PlayerBody.png-140d9e2a619b70af46f5bf210b6f5c6a.stex" ]
-dest_md5="6bc661cf6ab865236fc19d4cfa530ae3"
+dest_files=[ "res://.import/PlayingBoard.png-1525124a4646485e79b4b9d9bc3eff80.stex" ]
+dest_md5="15ba9908d37adf92e04ee43387acba16"
 
 [params]
 
