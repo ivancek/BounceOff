@@ -15,12 +15,13 @@ func on_area_entered(otherArea):
 		occupant.connect("jump_finished", self, "on_player_jump_finished")
 
 func on_area_exited(otherArea):
+	if occupant.has_method("prepare_new_bounce"): # it is the player that is occupying
+		occupant.disconnect("jump_finished", self, "on_player_jump_finished")
 	is_occupied = false
 
 func on_player_jump_finished():
 	if is_occupied:
 		if occupant.has_method("prepare_new_bounce"): # it is the player that is occupying
-			occupant.disconnect("jump_finished", self, "on_player_jump_finished")
 			occupant.prepare_new_bounce(position, -1, 0)
 		else: # must be something else
 			occupant.queue_free()

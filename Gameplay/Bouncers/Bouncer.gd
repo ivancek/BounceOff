@@ -3,9 +3,9 @@ extends Area2D
 const PlayerClass = preload("res://Gameplay/Player/Player.gd")
 enum BounceDirection { Left, Right, Up, Down, Opposite }
 
-export (Texture) var TEXTURE
 export (int) var ADDED_POWER = 0
-export (BounceDirection) var BOUNCE_DIRECTION = BounceDirection.Left
+export (BounceDirection) var BOUNCE_DIRECTION = 4
+
 
 var bounce_direction = { 
 	BounceDirection.Left : Vector2(-1, 0), 
@@ -16,10 +16,9 @@ var bounce_direction = {
 }
 
 
-
 func _ready():
-	$Sprite.texture = TEXTURE
 	connect("area_entered", self, "on_area_entered")
+
 
 func on_area_entered(otherArea):
 	if otherArea.has_method("prepare_new_bounce"):
