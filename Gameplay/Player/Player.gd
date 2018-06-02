@@ -31,6 +31,9 @@ func _ready():
 	my_state.my_position = position
 # ---------------------------------------
 
+func die():
+	$Animation.play("die")
+
 
 func jump_ended(object, key):
 	my_state.my_position = position
@@ -38,27 +41,26 @@ func jump_ended(object, key):
 	emit_signal("jump_finished")
 # ---------------------------------------
 
-
 func _input(event):
 	if _ignore_input:
 		return
 	
-	if event.is_action_pressed("long_left"):
+#	if event.is_action_pressed("long_left"):
+#		jump(position, Vector2(-1, 0), JUMP_DISTANCE, JUMP_DURATION, true)
+#	elif event.is_action_pressed("long_right"):
+#		jump(position, Vector2(1, 0), JUMP_DISTANCE, JUMP_DURATION, true)
+#	elif event.is_action_pressed("long_up"):
+#		jump(position, Vector2(0, -1), JUMP_DISTANCE, JUMP_DURATION, true)
+#	elif event.is_action_pressed("long_down"):
+#		jump(position, Vector2(0, 1), JUMP_DISTANCE, JUMP_DURATION, true)
+	if event.is_action_pressed("ui_left"):
 		jump(position, Vector2(-1, 0), JUMP_DISTANCE, JUMP_DURATION, true)
-	elif event.is_action_pressed("long_right"):
-		jump(position, Vector2(1, 0), JUMP_DISTANCE, JUMP_DURATION, true)
-	elif event.is_action_pressed("long_up"):
-		jump(position, Vector2(0, -1), JUMP_DISTANCE, JUMP_DURATION, true)
-	elif event.is_action_pressed("long_down"):
-		jump(position, Vector2(0, 1), JUMP_DISTANCE, JUMP_DURATION, true)
-	elif event.is_action_pressed("ui_left"):
-		jump(position, Vector2(-1, 0), HOP_DISTANCE, HOP_DURATION, true)
 	elif event.is_action_pressed("ui_right"):
-		jump(position, Vector2(1, 0), HOP_DISTANCE, HOP_DURATION, true)
+		jump(position, Vector2(1, 0), JUMP_DISTANCE, JUMP_DURATION, true)
 	elif event.is_action_pressed("ui_up"):
-		jump(position, Vector2(0, -1), HOP_DISTANCE, HOP_DURATION, true)
+		jump(position, Vector2(0, -1), JUMP_DISTANCE, JUMP_DURATION, true)
 	elif event.is_action_pressed("ui_down"):
-		jump(position, Vector2(0, 1), HOP_DISTANCE, HOP_DURATION, true)
+		jump(position, Vector2(0, 1), JUMP_DISTANCE, JUMP_DURATION, true)
 # ---------------------------------------
 
 func jump(starting_position, direction, jump_distance, jump_duration, emit_signal = false):
@@ -130,4 +132,8 @@ func get_state():
 func set_state(new_state):
 	my_state = new_state.duplicate()
 	position = my_state.my_position
+	
+	# Cannot be dead when setting new state.
+	$Animation.play("default")
+	
 	emit_signal("coin_amount_changed", my_state.coin_amount)

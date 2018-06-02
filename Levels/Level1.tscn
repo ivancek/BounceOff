@@ -27,67 +27,55 @@ position = Vector2( 1088, 576 )
 
 position = Vector2( 960, 576 )
 
-[node name="Wall4" parent="World/Obstacles" index="4" instance=ExtResource( 2 )]
+[node name="Wall17" parent="World/Obstacles" index="4" instance=ExtResource( 2 )]
 
-position = Vector2( 1088, 448 )
+position = Vector2( 1216, 576 )
 
-[node name="Wall17" parent="World/Obstacles" index="5" instance=ExtResource( 2 )]
-
-position = Vector2( 1216, 448 )
-
-[node name="Wall5" parent="World/Obstacles" index="6" instance=ExtResource( 2 )]
+[node name="Wall5" parent="World/Obstacles" index="5" instance=ExtResource( 2 )]
 
 position = Vector2( 1344, 576 )
 
-[node name="Wall18" parent="World/Obstacles" index="7" instance=ExtResource( 2 )]
-
-position = Vector2( 1344, 448 )
-
-[node name="Wall6" parent="World/Obstacles" index="8" instance=ExtResource( 2 )]
+[node name="Wall6" parent="World/Obstacles" index="6" instance=ExtResource( 2 )]
 
 position = Vector2( 1600, 576 )
 
-[node name="Wall8" parent="World/Obstacles" index="9" instance=ExtResource( 2 )]
+[node name="Wall8" parent="World/Obstacles" index="7" instance=ExtResource( 2 )]
 
 position = Vector2( 1728, 576 )
 
-[node name="Wall9" parent="World/Obstacles" index="10" instance=ExtResource( 2 )]
+[node name="Wall9" parent="World/Obstacles" index="8" instance=ExtResource( 2 )]
 
 position = Vector2( 1728, 832 )
 
-[node name="Wall10" parent="World/Obstacles" index="11" instance=ExtResource( 2 )]
+[node name="Wall18" parent="World/Obstacles" index="9" instance=ExtResource( 2 )]
+
+position = Vector2( 1728, 704 )
+
+[node name="Wall10" parent="World/Obstacles" index="10" instance=ExtResource( 2 )]
 
 position = Vector2( 1600, 832 )
 
-[node name="Wall11" parent="World/Obstacles" index="12" instance=ExtResource( 2 )]
+[node name="Wall11" parent="World/Obstacles" index="11" instance=ExtResource( 2 )]
 
 position = Vector2( 1472, 832 )
 
-[node name="Wall12" parent="World/Obstacles" index="13" instance=ExtResource( 2 )]
+[node name="Wall12" parent="World/Obstacles" index="12" instance=ExtResource( 2 )]
 
 position = Vector2( 1344, 832 )
 
-[node name="Wall13" parent="World/Obstacles" index="14" instance=ExtResource( 2 )]
+[node name="Wall13" parent="World/Obstacles" index="13" instance=ExtResource( 2 )]
 
-position = Vector2( 1216, 960 )
+position = Vector2( 1216, 832 )
 
-[node name="Wall19" parent="World/Obstacles" index="15" instance=ExtResource( 2 )]
-
-position = Vector2( 1216, 1088 )
-
-[node name="Wall20" parent="World/Obstacles" index="16" instance=ExtResource( 2 )]
-
-position = Vector2( 1216, 1216 )
-
-[node name="Wall14" parent="World/Obstacles" index="17" instance=ExtResource( 2 )]
+[node name="Wall14" parent="World/Obstacles" index="14" instance=ExtResource( 2 )]
 
 position = Vector2( 1088, 832 )
 
-[node name="Wall15" parent="World/Obstacles" index="18" instance=ExtResource( 2 )]
+[node name="Wall15" parent="World/Obstacles" index="15" instance=ExtResource( 2 )]
 
 position = Vector2( 960, 832 )
 
-[node name="Wall16" parent="World/Obstacles" index="19" instance=ExtResource( 2 )]
+[node name="Wall16" parent="World/Obstacles" index="16" instance=ExtResource( 2 )]
 
 position = Vector2( 832, 832 )
 

@@ -1,8 +1,8 @@
 extends Area2D
 
-export (int) var COINS_NEEDED = 0
 export (Resource) var LEVEL_TO_LOAD
 
+var coins_needed
 var player
 var is_open = false
 
@@ -13,11 +13,11 @@ func _ready():
 
 
 func _on_Player_coin_amount_changed(new_amount):
-	if new_amount < COINS_NEEDED && is_open:
+	if new_amount < coins_needed && is_open:
 		is_open = false
 		$DoorAnim.play("CloseDoor")
 		$DoorSound.play(0.5)
-	elif new_amount == COINS_NEEDED && !is_open:
+	elif new_amount == coins_needed && !is_open:
 		is_open = true
 		$DoorAnim.play("OpenDoor")
 		$DoorSound.play(0.5)
