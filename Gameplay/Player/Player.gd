@@ -89,7 +89,7 @@ func collect_coin():
 
 
 func prepare_new_bounce(bouncer_position, bounce_direction, added_power):
-	print("Position", bouncer_position, ", Bounce direction", bounce_direction, ", Added force: ", added_power)
+#	print("prepare_new_bounce(): ", "Position", bouncer_position, ", Bounce direction", bounce_direction, ", Added force: ", added_power)
 	
 	var distance_vector = _position_before_jump - bouncer_position
 	var movement_vector = distance_vector.normalized()
@@ -105,7 +105,7 @@ func prepare_new_bounce(bouncer_position, bounce_direction, added_power):
 	else: # simply use direction provided by the bouncer
 		jump(bouncer_position, bounce_direction, power_remaining, HOP_DURATION * power_remaining)
 	
-	print("distance covered: ", distance_covered, ", power remaining: ", power_remaining, ", movement_vector:", movement_vector)
+#	print("distance covered: ", distance_covered, ", power remaining: ", power_remaining, ", movement_vector:", movement_vector)
 # ---------------------------------------
 
 
