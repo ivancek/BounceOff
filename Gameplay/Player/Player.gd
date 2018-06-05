@@ -2,7 +2,7 @@ extends Area2D
 
 const HOP_DURATION = 0.25
 const JUMP_DISTANCE = 3
-const JUMP_DURATION = HOP_DURATION * JUMP_DISTANCE / 2
+const JUMP_DURATION = 0.5
 const HOP_DISTANCE = 1
 
 onready var tween = $Tween
