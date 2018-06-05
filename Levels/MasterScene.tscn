@@ -2,13 +2,13 @@
 
 [ext_resource path="res://Levels/Level.gd" type="Script" id=1]
 [ext_resource path="res://Levels/PlayingBoard.png" type="Texture" id=2]
-[ext_resource path="res://Tilesets/TilesetBase.tres" type="TileSet" id=3]
+[ext_resource path="res://Tilesets/Tileset.tres" type="TileSet" id=3]
 [ext_resource path="res://Gameplay/Bouncers/Bouncer.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Gameplay/Exit/Exit.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Gameplay/Player/Player.tscn" type="PackedScene" id=6]
 [ext_resource path="res://GUI/Bars/CoinsBar.tscn" type="PackedScene" id=7]
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=1]
 
 resource_name = "default"
 length = 1.0
@@ -27,9 +27,8 @@ tracks/0/keys = {
 "values": [ Color( 0, 0, 0, 1 ) ]
 }
 
-[sub_resource type="Animation" id=1]
+[sub_resource type="Animation" id=2]
 
-resource_name = "fade_in"
 length = 0.5
 loop = false
 step = 0.1
@@ -46,9 +45,8 @@ tracks/0/keys = {
 "values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
 }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=3]
 
-resource_name = "fade_out"
 length = 0.5
 loop = false
 step = 0.1
@@ -111,7 +109,7 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( 131078, 22, 0, 131079, 22, 0, 131080, 22, 0, 131081, 22, 0, 131082, 22, 0, 131083, 22, 0, 131084, 22, 0, 131085, 22, 0, 196614, 22, 0, 196615, 22, 0, 196616, 22, 0, 196617, 22, 0, 196618, 22, 0, 196619, 22, 0, 196620, 22, 0, 196621, 22, 0, 262150, 22, 0, 262151, 22, 0, 262152, 22, 0, 262153, 22, 0, 262154, 22, 0, 262155, 22, 0, 262156, 22, 0, 262157, 22, 0, 327686, 22, 0, 327687, 22, 0, 327688, 22, 0, 327689, 22, 0, 327690, 22, 0, 327691, 22, 0, 327692, 22, 0, 327693, 22, 0, 393222, 22, 0, 393223, 22, 0, 393224, 22, 0, 393225, 22, 0, 393226, 22, 0, 393227, 22, 0, 393228, 22, 0, 393229, 22, 0, 458758, 22, 0, 458759, 22, 0, 458760, 22, 0, 458761, 22, 0, 458762, 22, 0, 458763, 22, 0, 458764, 22, 0, 458765, 22, 0, 524294, 22, 0, 524295, 22, 0, 524296, 22, 0, 524297, 22, 0, 524298, 22, 0, 524299, 22, 0, 524300, 22, 0, 524301, 22, 0, 589830, 22, 0, 589831, 22, 0, 589832, 22, 0, 589833, 22, 0, 589834, 22, 0, 589835, 22, 0, 589836, 22, 0, 589837, 22, 0 )
+tile_data = PoolIntArray( 131078, 1, 0, 131079, 1, 0, 131080, 1, 0, 131081, 1, 0, 131082, 1, 0, 131083, 1, 0, 131084, 1, 0, 131085, 1, 0, 196614, 1, 0, 196615, 1, 0, 196616, 1, 0, 196617, 1, 0, 196618, 1, 0, 196619, 1, 0, 196620, 1, 0, 196621, 1, 0, 262150, 1, 0, 262151, 1, 0, 262152, 1, 0, 262153, 1, 0, 262154, 1, 0, 262155, 1, 0, 262156, 1, 0, 262157, 1, 0, 327686, 1, 0, 327687, 1, 0, 327688, 1, 0, 327689, 1, 0, 327690, 1, 0, 327691, 1, 0, 327692, 1, 0, 327693, 1, 0, 393222, 1, 0, 393223, 1, 0, 393224, 1, 0, 393225, 1, 0, 393226, 1, 0, 393227, 1, 0, 393228, 1, 0, 393229, 1, 0, 458758, 1, 0, 458759, 1, 0, 458760, 1, 0, 458761, 1, 0, 458762, 1, 0, 458763, 1, 0, 458764, 1, 0, 458765, 1, 0, 524294, 1, 0, 524295, 1, 0, 524296, 1, 0, 524297, 1, 0, 524298, 1, 0, 524299, 1, 0, 524300, 1, 0, 524301, 1, 0, 589830, 1, 0, 589831, 1, 0, 589832, 1, 0, 589833, 1, 0, 589834, 1, 0, 589835, 1, 0, 589836, 1, 0, 589837, 1, 0 )
 _sections_unfolded = [ "Cell", "Transform" ]
 __meta__ = {
 "_edit_lock_": true
@@ -315,9 +313,9 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/default = SubResource( 3 )
-anims/fade_in = SubResource( 1 )
-anims/fade_out = SubResource( 2 )
+anims/default = SubResource( 1 )
+anims/fade_in = SubResource( 2 )
+anims/fade_out = SubResource( 3 )
 blend_times = [  ]
 
 

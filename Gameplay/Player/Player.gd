@@ -17,7 +17,6 @@ var _desiredPosition = Vector2()
 var _jump_power = Vector2()
 var _ignore_input = false
 
-
 var my_state = {
 	"my_position" : Vector2(),
 	"coin_amount" : 0,
@@ -32,6 +31,7 @@ func _ready():
 # ---------------------------------------
 
 func die():
+	_ignore_input = true
 	$Animation.play("die")
 
 
@@ -134,6 +134,7 @@ func set_state(new_state):
 	position = my_state.my_position
 	
 	# Cannot be dead when setting new state.
+	_ignore_input = false
 	$Animation.play("default")
 	
 	emit_signal("coin_amount_changed", my_state.coin_amount)

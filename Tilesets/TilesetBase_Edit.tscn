@@ -4,188 +4,20 @@
 
 [node name="Node2D" type="Node2D"]
 
-[node name="1" type="Sprite" parent="." index="0"]
+[node name="Wall" type="Sprite" parent="." index="0"]
 
 position = Vector2( 72, 72 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 128, 128 )
-_sections_unfolded = [ "Offset", "Region" ]
+_sections_unfolded = [ "Offset", "Region", "Transform" ]
 
-[node name="2" type="Sprite" parent="." index="1"]
-
-position = Vector2( 72, 208 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 0, 128, 128, 128 )
-_sections_unfolded = [ "Offset", "Region" ]
-
-[node name="3" type="Sprite" parent="." index="2"]
-
-position = Vector2( 208, 208 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 128, 128, 128, 128 )
-_sections_unfolded = [ "Offset", "Region" ]
-
-[node name="4" type="Sprite" parent="." index="3"]
-
-position = Vector2( 344, 208 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 256, 128, 128, 128 )
-_sections_unfolded = [ "Offset", "Region" ]
-
-[node name="5" type="Sprite" parent="." index="4"]
-
-position = Vector2( 72, 480 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 0, 384, 128, 128 )
-_sections_unfolded = [ "Offset", "Region" ]
-
-[node name="6" type="Sprite" parent="." index="5"]
-
-position = Vector2( 480, 208 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 384, 128, 128, 128 )
-_sections_unfolded = [ "Offset", "Region" ]
-
-[node name="7" type="Sprite" parent="." index="6"]
+[node name="Tile" type="Sprite" parent="." index="1"]
 
 position = Vector2( 208, 72 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 128, 0, 128, 128 )
-_sections_unfolded = [ "Offset", "Region" ]
-
-[node name="8" type="Sprite" parent="." index="7"]
-
-position = Vector2( 344, 72 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 256, 0, 128, 128 )
-_sections_unfolded = [ "Offset", "Region" ]
-
-[node name="9" type="Sprite" parent="." index="8"]
-
-position = Vector2( 480, 72 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 384, 0, 128, 128 )
-_sections_unfolded = [ "Offset", "Region" ]
-
-[node name="10" type="Sprite" parent="." index="9"]
-
-position = Vector2( 208, 480 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 128, 384, 128, 128 )
-_sections_unfolded = [ "Offset", "Region" ]
-
-[node name="11" type="Sprite" parent="." index="10"]
-
-position = Vector2( 480, 480 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 384, 384, 128, 128 )
-_sections_unfolded = [ "Offset", "Region", "Transform" ]
-
-[node name="12" type="Sprite" parent="." index="11"]
-
-position = Vector2( 480, 344 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 384, 256, 128, 128 )
-_sections_unfolded = [ "Offset", "Region", "Transform" ]
-
-[node name="13" type="Sprite" parent="." index="12"]
-
-position = Vector2( 72, 344 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 0, 256, 128, 128 )
-_sections_unfolded = [ "Offset", "Region", "Transform" ]
-
-[node name="14" type="Sprite" parent="." index="13"]
-
-position = Vector2( 344, 344 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 256, 256, 128, 128 )
-_sections_unfolded = [ "Offset", "Region", "Transform" ]
-
-[node name="15" type="Sprite" parent="." index="14"]
-
-position = Vector2( 208, 344 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 128, 256, 128, 128 )
-_sections_unfolded = [ "Offset", "Region", "Transform" ]
-
-[node name="16" type="Sprite" parent="." index="15"]
-
-position = Vector2( 344, 480 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 256, 384, 128, 128 )
-_sections_unfolded = [ "Offset", "Region" ]
-
-[node name="17" type="Sprite" parent="." index="16"]
-
-position = Vector2( 72, 616 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 0, 512, 128, 128 )
-_sections_unfolded = [ "Offset", "Region" ]
-
-[node name="18" type="Sprite" parent="." index="17"]
-
-position = Vector2( 208, 616 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 128, 512, 128, 128 )
-_sections_unfolded = [ "Offset", "Region" ]
-
-[node name="19" type="Sprite" parent="." index="18"]
-
-position = Vector2( 344, 616 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 256, 512, 128, 128 )
-_sections_unfolded = [ "Offset", "Region" ]
-
-[node name="20" type="Sprite" parent="." index="19"]
-
-position = Vector2( 480, 616 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 384, 512, 128, 128 )
-_sections_unfolded = [ "Offset", "Region" ]
-
-[node name="21" type="Sprite" parent="." index="20"]
-
-position = Vector2( 616, 72 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 512, 0, 128, 128 )
-_sections_unfolded = [ "Offset", "Region" ]
-
-[node name="22" type="Sprite" parent="." index="21"]
-
-position = Vector2( 616, 208 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 512, 128, 128, 128 )
-_sections_unfolded = [ "Offset", "Region" ]
-
-[node name="23" type="Sprite" parent="." index="22"]
-
-position = Vector2( 616, 616 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 512, 512, 128, 128 )
 _sections_unfolded = [ "Offset", "Region" ]
 
 

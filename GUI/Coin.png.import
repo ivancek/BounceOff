@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spike monster B.png-744bbff5151e87905a244a3855f111a0.stex"
+path="res://.import/Coin.png-bad2d3e949765541dac5608ca5268e97.stex"
 
 [deps]
 
-source_file="res://Gameplay/Killers/Sprites/spike monster B.png"
-source_md5="466e10917078459312c925b84bd38aa0"
+source_file="res://GUI/Coin.png"
+source_md5="a36318c147264ce42b636082fdf8195d"
 
-dest_files=[ "res://.import/spike monster B.png-744bbff5151e87905a244a3855f111a0.stex" ]
-dest_md5="e48aa903e7fd0e8ff0a173f21064ae40"
+dest_files=[ "res://.import/Coin.png-bad2d3e949765541dac5608ca5268e97.stex" ]
+dest_md5="e87b15e9bb334ed211b6803121b163ca"
 
 [params]
 

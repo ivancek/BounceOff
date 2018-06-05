@@ -211,4 +211,22 @@
 22/occluder_offset = Vector2( 64, 64 )
 22/navigation_offset = Vector2( 64, 64 )
 22/shapes = [  ]
+23/name = "Wall"
+23/texture = ExtResource( 1 )
+23/tex_offset = Vector2( 0, 0 )
+23/modulate = Color( 1, 1, 1, 1 )
+23/region = Rect2( 0, 0, 128, 128 )
+23/is_autotile = false
+23/occluder_offset = Vector2( 64, 64 )
+23/navigation_offset = Vector2( 64, 64 )
+23/shapes = [  ]
+24/name = "Tile"
+24/texture = ExtResource( 1 )
+24/tex_offset = Vector2( 0, 0 )
+24/modulate = Color( 1, 1, 1, 1 )
+24/region = Rect2( 128, 0, 128, 128 )
+24/is_autotile = false
+24/occluder_offset = Vector2( 64, 64 )
+24/navigation_offset = Vector2( 64, 64 )
+24/shapes = [  ]
 

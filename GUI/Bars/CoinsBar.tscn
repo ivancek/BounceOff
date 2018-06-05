@@ -2,8 +2,9 @@
 
 [ext_resource path="res://GUI/Bars/CoinsBar.gd" type="Script" id=1]
 [ext_resource path="res://GUI/label_HP_bg.png" type="Texture" id=2]
-[ext_resource path="res://Gameplay/Coin/Coin.png" type="Texture" id=3]
+[ext_resource path="res://GUI/Coin.png" type="Texture" id=3]
 [ext_resource path="res://font/Comfortaa-Bold.ttf" type="DynamicFontData" id=4]
+
 
 
 [sub_resource type="DynamicFont" id=1]
@@ -15,7 +16,7 @@ extra_spacing_bottom = -8
 font_data = ExtResource( 4 )
 _sections_unfolded = [ "Extra Spacing", "Font", "Settings" ]
 
-[node name="CoinsBar" type="Control"]
+[node name="CoinsBar" type="Control" index="0"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -57,7 +58,7 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_right = 128.0
-margin_bottom = 127.0
+margin_bottom = 128.0
 rect_scale = Vector2( 0.5, 0.5 )
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
