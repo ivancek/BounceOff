@@ -14,7 +14,6 @@ func _ready():
 	$World/Exit.subscribe_to($Player)
 	
 	$Animation.play("fade_in")
-	$Music.play()
 	pass
 
 func on_player_exited():

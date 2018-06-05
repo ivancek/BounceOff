@@ -5,7 +5,7 @@ onready var label = $TextureRect.get_node("Label")
 var player
 
 func _ready():
-	player = get_tree().get_current_scene().get_node("Player")
+	player = get_node("/root/Game/CurrentLevel/Player")
 	player.connect("coin_amount_changed", self, "_on_Player_coin_amount_changed")
 	label.text = str(0)
 

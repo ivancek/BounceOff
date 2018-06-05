@@ -11,12 +11,8 @@ config_version=3
 [application]
 
 config/name="Bounce Off"
-run/main_scene="res://Core/MainMenu.tscn"
+run/main_scene="res://Core/Game.tscn"
 config/icon="res://icon.png"
-
-[autoload]
-
-global="*res://global.gd"
 
 [display]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Levels/Level.gd" type="Script" id=1]
 [ext_resource path="res://Levels/PlayingBoard.png" type="Texture" id=2]
@@ -7,7 +7,6 @@
 [ext_resource path="res://Gameplay/Exit/Exit.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Gameplay/Player/Player.tscn" type="PackedScene" id=6]
 [ext_resource path="res://GUI/Bars/CoinsBar.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Music/ThinkingMusic.ogg" type="AudioStream" id=8]
 
 [sub_resource type="Animation" id=3]
 
@@ -27,18 +26,6 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Color( 0, 0, 0, 1 ) ]
 }
-tracks/1/type = "value"
-tracks/1/path = NodePath("Music:volume_db")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 0,
-"values": [ 10.0 ]
-}
 
 [sub_resource type="Animation" id=1]
 
@@ -57,18 +44,6 @@ tracks/0/keys = {
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
 "values": [ Color( 0, 0, 0, 1 ), Color( 0, 0, 0, 0 ) ]
-}
-tracks/1/type = "value"
-tracks/1/path = NodePath("Music:volume_db")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ -13.34, 10.0 ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -103,20 +78,8 @@ tracks/1/keys = {
 "method": "load_next_level"
 } ]
 }
-tracks/2/type = "value"
-tracks/2/path = NodePath("Music:volume_db")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
-"times": PoolRealArray( 0, 0.5 ),
-"transitions": PoolRealArray( 1, 1 ),
-"update": 0,
-"values": [ 10.0, -13.34 ]
-}
 
-[node name="Root" type="Node2D" index="0"]
+[node name="CurrentLevel" type="Node2D"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
@@ -345,17 +308,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 1
 color = Color( 0, 0, 0, 1 )
 
-[node name="Music" type="AudioStreamPlayer2D" parent="." index="6"]
-
-stream = ExtResource( 8 )
-volume_db = 10.0
-autoplay = false
-max_distance = 2000.0
-attenuation = 1.0
-bus = "Master"
-area_mask = 1
-
-[node name="Animation" type="AnimationPlayer" parent="." index="7"]
+[node name="Animation" type="AnimationPlayer" parent="." index="6"]
 
 root_node = NodePath("..")
 autoplay = ""

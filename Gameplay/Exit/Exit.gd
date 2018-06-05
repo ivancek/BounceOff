@@ -21,7 +21,10 @@ func subscribe_to(playerRef):
 
 
 func load_next_level():
-	get_node("/root/global").load_level(LEVEL_TO_LOAD.resource_path)
+	if LEVEL_TO_LOAD:
+		get_node("/root/Game").load_level(LEVEL_TO_LOAD.resource_path)
+	else:
+		get_node("/root/Game").finish_game()
 
 
 func _on_Player_jump_finished():
