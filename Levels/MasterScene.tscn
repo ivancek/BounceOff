@@ -77,7 +77,7 @@ tracks/1/keys = {
 } ]
 }
 
-[node name="CurrentLevel" type="Node2D" index="0"]
+[node name="CurrentLevel" type="Node2D"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Transform" ]
@@ -291,6 +291,8 @@ size_flags_vertical = 1
 _sections_unfolded = [ "Anchor", "Grow Direction", "Margin", "Rect" ]
 
 [node name="CoinsBar" parent="Control" index="0" instance=ExtResource( 7 )]
+
+visible = false
 
 [node name="ColorRect" type="ColorRect" parent="Control" index="1"]
 
