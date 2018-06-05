@@ -10,10 +10,16 @@ func _ready():
 	$World/Exit.coins_needed = $World/Coins.get_child_count()
 	$Player.connect("jump_started", self, "on_player_jump_started")
 	$Player.connect("jump_finished", self, "on_player_jump_finished")
+	$World/Exit.connect("player_exited", self, "on_player_exited")
+	$World/Exit.subscribe_to($Player)
 	
-	$World/Exit.subscribe($Player)
+	$Animation.play("fade_in")
+	$Music.play()
 	pass
 
+func on_player_exited():
+	$Animation.play("fade_out")
+	$Music.stop()
 
 func _input(event):
 	if !allow_undo:

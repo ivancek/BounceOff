@@ -1,6 +1,6 @@
 extends Area2D
 
-signal level_complete()
+signal player_exited()
 
 export (Resource) var LEVEL_TO_LOAD
 
@@ -14,15 +14,20 @@ func _ready():
 	connect("area_entered", self, "on_area_entered")
 	connect("area_exited", self, "on_area_exited")
 
-func subscribe(playerRef):
+
+func subscribe_to(playerRef):
 	player = playerRef
 	player.connect("coin_amount_changed", self, "_on_Player_coin_amount_changed")
 
 
+func load_next_level():
+	get_node("/root/global").load_level(LEVEL_TO_LOAD.resource_path)
+
+
 func _on_Player_jump_finished():
 	if is_occupied:
+		emit_signal("player_exited")
 		player.disconnect("jump_finished", self, "_on_Player_jump_finished")
-		get_node("/root/global").load_level(LEVEL_TO_LOAD.resource_path)
 
 
 func _on_Player_coin_amount_changed(new_amount):
