@@ -10,6 +10,8 @@ func _ready():
 	$World/Exit.coins_needed = $World/Coins.get_child_count()
 	$Player.connect("jump_started", self, "on_player_jump_started")
 	$Player.connect("jump_finished", self, "on_player_jump_finished")
+	
+	$World/Exit.subscribe($Player)
 	pass
 
 
