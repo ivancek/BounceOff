@@ -50,7 +50,8 @@ func on_area_exited(otherArea):
 func on_area_entered(otherArea):
 	if is_open:
 		is_occupied = true
-		player.connect("jump_finished", self, "_on_Player_jump_finished")
+		if !player.is_connected("jump_finished", self, "_on_Player_jump_finished"):
+			player.connect("jump_finished", self, "_on_Player_jump_finished")
 	else:
 		if otherArea.has_method("prepare_new_bounce"):
 			otherArea.prepare_new_bounce(position, -1, 0)

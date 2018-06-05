@@ -19,7 +19,6 @@ func _ready():
 
 func on_player_exited():
 	$Animation.play("fade_out")
-	$Music.stop()
 
 func _input(event):
 	if !allow_undo:
